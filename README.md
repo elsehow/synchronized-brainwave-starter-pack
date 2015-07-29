@@ -8,7 +8,7 @@ Here's an example, along with a few support libraries, on how to work with data 
 
 Returns a generator of feature vectors for the given subject between time0 and time1.
 
-Optionally, this can take a third argument, `sq`, which defines a threshold signal quality to be eligible in a feature vector.
+Optionally, this can take a third argument, `sq`, which defines a threshold signal quality to be eligible in a feature vector. (By default, only readings with perfect signal quality are included).
 
 ## Notes
 
