@@ -49,9 +49,10 @@ def make_feature_vector (readings): # A function we apply to each group of power
 
 # feature vector generator
 
-def feature_vector_generator (subject, t0, t1):
+def feature_vector_generator (subject, t0, t1, sq=0):
   '''Returns a generator of feature vectors
-  based on the config variables above'''
+  for subject between t0 and t1. All returned vectors
+  are guaranteed to be equal to or above signal quality sq.'''
   # get all the readings for subject between t0 and t1
   readings = querying.readings(subject, t0, t1)
   # group readings into lists of length `vector_resolution`

@@ -26,13 +26,14 @@ def crossValidate(X,y):
   scores = cross_validation.cross_val_score(clf, np.array(X), y, cv=7)
   return scores.mean()
 
-# time ranges i'm interested in
-t0 = parse('2015-05-09 23:28:46+00')
-t1 = parse('2015-05-09 23:29:46+00')
-# make two generators of feature vectors
-# for two different subjects' readings between t0 and t1
-personA_gen = feature_vector_generator(11, t0,t1)
-personB_gen = feature_vector_generator(10, t0,t1)
-# see how distinguishable these two people are
+# let's see how well we can distinguish between two subjects based on their brainwaves.
+# we'll get their data from a specific time range:
+t0 = parse('2015-05-09 23:28:00+00')
+t1 = parse('2015-05-09 23:30:31+00')
+# and make two generators of feature vectors for the two different subjects:
+personA_gen = feature_vector_generator(9, t0, t1)
+personB_gen = feature_vector_generator(13, t0, t1)
+# now let's feed these feature vectors into an SVM
+# and do 7-fold cross-validation.
 X, y = vectorsAndLabels([personA_gen, personB_gen])
 crossValidate(X, y)

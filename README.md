@@ -1,12 +1,14 @@
-# Example for working with the synchronized brainwave dataset
+# Starter kit for working with the synchronized brainwave dataset
 
-Here's an example, along with a few support libraries, on how to work with data from the synchronized brainwave dataset.
+Here's an example, along with a few support libraries, on how to work with data from the [synchronized brainwave dataset](biosense.berkeley.edu/indra_mids_5_15_dlpage/).
 
 ## Core API
 
 `feature_vector_generator(subject_num, time0, time1)`
 
 Returns a generator of feature vectors for the given subject between time0 and time1.
+
+Optionally, this can take a third argument, `sq`, which defines a threshold signal quality to be eligible in a feature vector.
 
 ## Notes
 
