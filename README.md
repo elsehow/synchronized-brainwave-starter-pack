@@ -1,6 +1,6 @@
 # Starter kit for working with the synchronized brainwave dataset
 
-Here's an example, along with a few support libraries, on how to work with data from the [synchronized brainwave dataset](biosense.berkeley.edu/indra_mids_5_15_dlpage/).
+Here's an example, along with a few support libraries, on how to work with data from the [synchronized brainwave dataset](http://biosense.berkeley.edu/indra_mids_5_15_dlpage/).
 
 ## Core API
 
