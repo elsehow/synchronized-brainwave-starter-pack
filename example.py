@@ -36,4 +36,4 @@ personB_gen = feature_vector_generator(13, t0, t1)
 # now let's feed these feature vectors into an SVM
 # and do 7-fold cross-validation.
 X, y = vectorsAndLabels([personA_gen, personB_gen])
-crossValidate(X, y)
+print crossValidate(X, y)

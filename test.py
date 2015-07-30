@@ -17,7 +17,7 @@ round1_math_t1 = parse('2015-05-09 23:33:58.875+00')
 
 # see how many feature vectors we get from each round 1 subject in this range
 # if each feature vector represents 3 seconds of data, we should see ~ 10 per subject
-num_feature_vectors(
+print num_feature_vectors(
   range(1,16),
   round1_math_t0,
   round1_math_t1)
@@ -27,7 +27,7 @@ num_feature_vectors(
 round2_math_t0 = parse('2015-05-09 23:44:26.341+00')
 round2_math_t1 = parse('2015-05-09 23:44:56.343+00')
 # find all feature vectors in this range for round 2 subjects
-num_feature_vectors(
+print num_feature_vectors(
   range(16,31),
   round2_math_t0,
   round2_math_t1)
