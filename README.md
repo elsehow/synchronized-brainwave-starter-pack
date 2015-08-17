@@ -2,6 +2,8 @@
 
 Here's an example, along with a few support libraries, on how to work with data from the [synchronized brainwave dataset](http://biosense.berkeley.edu/indra_mids_5_15_dlpage/).
 
+Download the dataset, name the folder "dataset" and place it in the root directory of this project to run the example.
+
 ## Core API
 
 `feature_vector_generator(subject_num, time0, time1)`
